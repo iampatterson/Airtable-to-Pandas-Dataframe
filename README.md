@@ -12,20 +12,20 @@ You will need to install the package (see below). And you are off to the races.
 
 Here my quick snippet of code. 
 
-
+```
 import os
 from pprint import pprint
 from airtable import airtable
 import pandas as pd
-
+```
+```
 base_key = 'Paste your base_key between the quotes'
 table_name = 'put the name of the view (i.e sheet) between the quotes'
 airtable = airtable.Airtable(base_key, table_name, api_key='Paste your api key between the quotes')
-
-# Get All with Max Records
 records = airtable.get_all()
 df = pd.DataFrame.from_records((r['fields'] for r in records))
 print(df)
+```
 
 
 # Airtable Python Wrapper
