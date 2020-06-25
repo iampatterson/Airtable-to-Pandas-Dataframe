@@ -20,7 +20,7 @@ import pandas as pd
 
 # Connects you into your Airtable.
 base_key = 'Paste your base_key between the quotes'
-table_name = 'put the name of the view (i.e sheet) between the quotes'
+table_name = 'Paste the name of the view (i.e sheet) between the quotes'
 airtable = airtable.Airtable(base_key, table_name, api_key='Paste your api key between the quotes')
 
 # Downloads all your records into a dataframe.
